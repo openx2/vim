@@ -26,6 +26,7 @@ set si " smartindent
 set cursorline " stand out the cursor line
 set hlsearch
 set showcmd " show command of normal mode at lower right corner
+colorscheme slate
 
 set encoding=utf-8
 set langmenu=zh_CN.UTF-8
@@ -99,3 +100,7 @@ augroup END
 
 "python
 au FileType python source ~/.vim/python.vim
+"Haskell
+au FileType haskell source ~/.vim/haskell.vim
+"Markdown
+au FileType markdown source ~/.vim/markdown.vim

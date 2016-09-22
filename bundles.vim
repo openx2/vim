@@ -12,9 +12,10 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+"Plugin 'tpope/vim-fugitive'
 
 "PowerLine插件 状态栏增强展示
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'Lokaltog/vim-powerline'
 "vim有一个状态栏 加上powline则有两个状态栏
 set laststatus=2
 set t_Co=256
@@ -34,8 +35,17 @@ Plugin 'nvie/vim-flake8'
 "符合PEP8标准的python缩进插件"
 Plugin 'vim-scripts/indentpython.vim'
 
-"Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
+"Use HdevtoolsType to check type"
+Plugin 'bitc/vim-hdevtools'
+let g:syntastic_haskell_hdevtools_args = '-g -isrc -g -Wall -g -hide-package -g transformers'
+
+" markdown语法高亮插件
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_fenced_languages = ['python=py']
+let g:vim_markdown_folding_style_pythonic = 1
+
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
