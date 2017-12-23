@@ -20,6 +20,7 @@ set noexpandtab
 set pastetoggle=<F5> "插入模式粘贴不会自动缩进避免混乱
 
 set nu " show row number
+set relativenumber " show relative row number
 set nowrap " when a line has many words, don't wrap the line
 set ai " autoindent of C/C++
 set si " smartindent 
