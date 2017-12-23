@@ -43,27 +43,11 @@ filetype plugin on
 " 启动智能补全
 filetype plugin indent on
 
-"自动补全
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap < <><ESC>i
-:inoremap > <c-r>=ClosePair('>')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
-function! ClosePair(char)
-    if getline('.')[col('.') - 1] == a:char
-        return "\<Right>"
-    else
-        return a:char
-    endif
-endfunction
-
 " 定义快捷键的前缀，即<Leader>
-let mapleader=";"
+let mapleader=" "
 " 定义快捷键到行首和行尾
-nmap lb 0
+nmap ls 0
+nmap lb ^
 nmap le $
 " 设置快捷键将选中文本块复制至系统剪贴板
 vnoremap <Leader>y "+y
@@ -91,6 +75,8 @@ nnoremap <Leader>jw <C-W>j
 nnoremap <Leader>n :nohl<CR>
 " 定义快捷键在结对符之间跳转，助记pair
 nmap <Leader>pa %
+" 按两次空格自动折叠
+nnoremap <Leader><Leader> za
 
 "记住上次的光标位置
 augroup resCur

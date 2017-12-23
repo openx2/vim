@@ -21,6 +21,9 @@ set laststatus=2
 set t_Co=256
 let g:Powline_symbols='fancy'
 
+"括号自动闭合
+Plugin 'jiangmiao/auto-pairs'
+
 "将python缩进转为折叠的增强插件
 Plugin 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
