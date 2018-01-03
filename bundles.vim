@@ -23,6 +23,9 @@ let g:Powline_symbols='fancy'
 
 "括号自动闭合
 Plugin 'jiangmiao/auto-pairs'
+let g:AutoPairsFlyMode = 1
+let g:AutoPairsShortcutFastWrap = '<C-e>'
+let g:AutoPairsShortcutBackInsert = '<C-b>'
 
 "将python缩进转为折叠的增强插件
 Plugin 'tmhedberg/SimpylFold'

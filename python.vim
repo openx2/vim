@@ -15,7 +15,5 @@ match BadWhitespace /\s\+$/
 " 开启折叠
 set foldmethod=indent
 set foldlevel=99
-" 通常模式下按空格键折叠代码
-nnoremap <space> za
 
 let python_highlight_all=1

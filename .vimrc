@@ -15,7 +15,7 @@ set backspace=indent,eol,start " configure the way backspace works
 set shiftwidth=4
 set tabstop=8
 set softtabstop=4
-set noexpandtab
+set expandtab
 
 set pastetoggle=<F5> "插入模式粘贴不会自动缩进避免混乱
 
@@ -27,7 +27,7 @@ set si " smartindent
 set cursorline " stand out the cursor line
 set hlsearch
 set showcmd " show command of normal mode at lower right corner
-colorscheme slate
+colorscheme desert
 
 set encoding=utf-8
 set langmenu=zh_CN.UTF-8
