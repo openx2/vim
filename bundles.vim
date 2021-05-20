@@ -28,11 +28,11 @@ let g:AutoPairsShortcutFastWrap = '<C-e>'
 let g:AutoPairsShortcutBackInsert = '<C-b>'
 
 "将python缩进转为折叠的增强插件
-Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tmhedberg/SimpylFold'
 let g:SimpylFold_docstring_preview=1
 
 "每次保存文件时进行语法检查
-Plugin 'vim-scripts/Pydiction'
+"Plugin 'vim-scripts/Pydiction'
 Plugin 'scrooloose/syntastic'
 
 "PEP8 代码风格检查
@@ -41,16 +41,15 @@ Plugin 'nvie/vim-flake8'
 "符合PEP8标准的python缩进插件"
 Plugin 'vim-scripts/indentpython.vim'
 
-"Use HdevtoolsType to check type"
-Plugin 'bitc/vim-hdevtools'
-let g:syntastic_haskell_hdevtools_args = '-g -isrc -g -Wall -g -hide-package -g transformers'
-
 " markdown语法高亮插件
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_fenced_languages = ['python=py']
 let g:vim_markdown_folding_style_pythonic = 1
+
+"colorscheme
+Plugin 'gryf/wombat256grf'
 
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
